@@ -167,8 +167,8 @@ reward:
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
-  minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
+  enable: true
+  minCharNumber: 50 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
@@ -527,3 +527,7 @@ icp:
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 jsDelivr:
   url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
+
+search:
+  path: search.xml
+  field: post

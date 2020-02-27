@@ -1,7 +1,9 @@
 ---
 title: 使用hexo搭建个人博客
 date: 2020-02-26 16:28:56
-tags:
+tags: 前端
+categories:
+- ['前端']
 ---
 # 使用hexo搭建个人博客
 

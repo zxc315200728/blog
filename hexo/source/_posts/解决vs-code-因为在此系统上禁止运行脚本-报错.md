@@ -2,6 +2,7 @@
 title: 解决vs code 因为在此系统上禁止运行脚本 报错
 date: 2020-02-27 09:15:08
 tags: 前端
+categories: vscode
 ---
 
 # 解决vs code 因为在此系统上禁止运行脚本 报错

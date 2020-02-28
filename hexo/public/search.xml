@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>关于nginx以及配置文件所在位置</title>
+      <link href="/2020/02/28/ck75oonfx00034ovz3kfzgn19/"/>
+      <url>/2020/02/28/ck75oonfx00034ovz3kfzgn19/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于nginx以及配置文件所在位置"><a href="#关于nginx以及配置文件所在位置" class="headerlink" title="关于nginx以及配置文件所在位置"></a>关于nginx以及配置文件所在位置</h1><h2 id="程序在运行中-查询nginx文件位置"><a href="#程序在运行中-查询nginx文件位置" class="headerlink" title="程序在运行中  查询nginx文件位置"></a>程序在运行中  查询nginx文件位置</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# ps -ef | grep nginxroot      5349     1  0 Feb27 ?        00:00:00 nginx: master process /usr/sbin/nginxnginx    17687  5349  0 10:14 ?        00:00:00 nginx: worker processroot     17770 17740  0 11:07 pts/3    00:00:00 grep --color=auto nginx</code></pre><h2 id="查看软件安装路径"><a href="#查看软件安装路径" class="headerlink" title="查看软件安装路径"></a>查看软件安装路径</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# whereis nginxnginx: /usr/sbin/nginx /usr/lib64/nginx /etc/nginx /usr/share/nginx /usr/share/man/man8/nginx.8.gz /usr/share/man/man3/nginx.3pm.gz</code></pre><h2 id="查询运行文件所在路径"><a href="#查询运行文件所在路径" class="headerlink" title="查询运行文件所在路径"></a>查询运行文件所在路径</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# which nginx/usr/sbin/nginx</code></pre><h2 id="通过Nginx自身的功能找到配置文件的位置"><a href="#通过Nginx自身的功能找到配置文件的位置" class="headerlink" title="通过Nginx自身的功能找到配置文件的位置"></a>通过Nginx自身的功能找到配置文件的位置</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# /usr/sbin/nginx -tnginx: the configuration file /etc/nginx/nginx.conf syntax is oknginx: configuration file /etc/nginx/nginx.conf test is successful</code></pre><h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><h2 id="service-nginx-reload-但是配置文件不生效"><a href="#service-nginx-reload-但是配置文件不生效" class="headerlink" title="service nginx reload 但是配置文件不生效"></a>service nginx reload 但是配置文件不生效</h2><blockquote><p>个人理解service nginx reload不重新加载配置文件 只是重启上次的服务<br>到nginx目录下执行 nginx -s reload 才会重新加载nginx.conf  修改的才会生效</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> nginx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决vs code 因为在此系统上禁止运行脚本 报错</title>
+      <link href="/2020/02/27/ck75oonfu00014ovz1zzghs3j/"/>
+      <url>/2020/02/27/ck75oonfu00014ovz1zzghs3j/</url>
+      
+        <content type="html"><![CDATA[<h1 id="解决vs-code-因为在此系统上禁止运行脚本-报错"><a href="#解决vs-code-因为在此系统上禁止运行脚本-报错" class="headerlink" title="解决vs code 因为在此系统上禁止运行脚本 报错"></a>解决vs code 因为在此系统上禁止运行脚本 报错</h1><p>今天想在VScode中直接运行 hexo s 结果发现VScode显示 此系统上禁止运行脚本  解决方法如下</p><a id="more"></a><h2 id="查看ExecutionPolicy状态"><a href="#查看ExecutionPolicy状态" class="headerlink" title="查看ExecutionPolicy状态"></a>查看ExecutionPolicy状态</h2><blockquote><p>输入 get-ExecutionPolicy 显示Restricted 说明在终端中禁止运行脚本</p></blockquote><h2 id="修改ExecutionPolicy"><a href="#修改ExecutionPolicy" class="headerlink" title="修改ExecutionPolicy"></a>修改ExecutionPolicy</h2><blockquote><p>set-ExecutionPolicy</p></blockquote><h2 id="设置值"><a href="#设置值" class="headerlink" title="设置值"></a>设置值</h2><blockquote><p>RemoteSigned</p></blockquote><h2 id="验证状态"><a href="#验证状态" class="headerlink" title="验证状态"></a>验证状态</h2><blockquote><p>get-ExecutionPolicy</p></blockquote><hr><h2 id="下面是执行结果"><a href="#下面是执行结果" class="headerlink" title="下面是执行结果"></a>下面是执行结果</h2><pre><code>PS D:\blog\hexo&gt; get-ExecutionPolicyRestrictedPS D:\blog\hexo&gt; set-ExecutionPolicy位于命令管道位置 1 的 cmdlet Set-ExecutionPolicy请为以下参数提供值:ExecutionPolicy: RemoteSignedPS D:\blog\hexo&gt; get-ExecutionPolicyRemoteSignedPS D:\blog\hexo&gt; hexo s  INFO  Start processingINFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> vscode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

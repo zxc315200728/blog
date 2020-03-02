@@ -4,9 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于nginx以及配置文件所在位置, 张小灿的博客">
-    <meta name="description" content="关于nginx以及配置文件所在位置程序在运行中  查询nginx文件位置[root@iz2ze783u2o2utti58eckwz ~]# ps -ef | grep nginx
-root      5349     1  0 Feb27 ">
+    <meta name="keywords" content="CSS var() 函数, 张小灿的博客">
+    <meta name="description" content="CSS var() 函数 官方说明
+定义一个名为 “–main-bg-color” 的属性，然后使用 var() 函数调用该属性：
+
+:root {
+--main-bg-color: coral;
+}
+
+#div1 {
+background">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +21,7 @@ root      5349     1  0 Feb27 ">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于nginx以及配置文件所在位置 | 张小灿的博客</title>
+    <title>CSS var() 函数 | 张小灿的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +311,12 @@ root      5349     1  0 Feb27 ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">关于nginx以及配置文件所在位置</h1>
+                    <h1 class="description center-align post-title">CSS var() 函数</h1>
                 </div>
             </div>
         </div>
@@ -426,23 +433,14 @@ root      5349     1  0 Feb27 ">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/nginx/">
-                                <span class="chip bg-color">nginx</span>
+                            <a href="/tags/css/">
+                                <span class="chip bg-color">css</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/nginx/" class="post-category">
-                                nginx
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -451,7 +449,7 @@ root      5349     1  0 Feb27 ">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-02-28
+                    2020-03-02
                 </div>
                 
 
@@ -468,17 +466,54 @@ root      5349     1  0 Feb27 ">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="关于nginx以及配置文件所在位置"><a href="#关于nginx以及配置文件所在位置" class="headerlink" title="关于nginx以及配置文件所在位置"></a>关于nginx以及配置文件所在位置</h1><h2 id="程序在运行中-查询nginx文件位置"><a href="#程序在运行中-查询nginx文件位置" class="headerlink" title="程序在运行中  查询nginx文件位置"></a>程序在运行中  查询nginx文件位置</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# ps -ef | grep nginx
-root      5349     1  0 Feb27 ?        00:00:00 nginx: master process /usr/sbin/nginx
-nginx    17687  5349  0 10:14 ?        00:00:00 nginx: worker process
-root     17770 17740  0 11:07 pts/3    00:00:00 grep --color=auto nginx</code></pre><h2 id="查看软件安装路径"><a href="#查看软件安装路径" class="headerlink" title="查看软件安装路径"></a>查看软件安装路径</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# whereis nginx
-nginx: /usr/sbin/nginx /usr/lib64/nginx /etc/nginx /usr/share/nginx /usr/share/man/man8/nginx.8.gz /usr/share/man/man3/nginx.3pm.gz</code></pre><h2 id="查询运行文件所在路径"><a href="#查询运行文件所在路径" class="headerlink" title="查询运行文件所在路径"></a>查询运行文件所在路径</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# which nginx
-/usr/sbin/nginx</code></pre><h2 id="通过Nginx自身的功能找到配置文件的位置"><a href="#通过Nginx自身的功能找到配置文件的位置" class="headerlink" title="通过Nginx自身的功能找到配置文件的位置"></a>通过Nginx自身的功能找到配置文件的位置</h2><pre><code>[root@iz2ze783u2o2utti58eckwz ~]# /usr/sbin/nginx -t
-nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-nginx: configuration file /etc/nginx/nginx.conf test is successful</code></pre><h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><h2 id="service-nginx-reload-但是配置文件不生效"><a href="#service-nginx-reload-但是配置文件不生效" class="headerlink" title="service nginx reload 但是配置文件不生效"></a>service nginx reload 但是配置文件不生效</h2><blockquote>
-<p>个人理解service nginx reload不重新加载配置文件 只是重启上次的服务<br>到nginx目录下执行 nginx -s reload 才会重新加载nginx.conf  修改的才会生效</p>
+                <h1 id="CSS-var-函数-官方说明"><a href="#CSS-var-函数-官方说明" class="headerlink" title="CSS var() 函数 官方说明"></a>CSS var() 函数 <a href="https://www.runoob.com/cssref/func-var.html" target="_blank" rel="noopener">官方说明</a></h1><blockquote>
+<p>定义一个名为 “–main-bg-color” 的属性，然后使用 var() 函数调用该属性：</p>
 </blockquote>
+<pre><code>:root {
+--main-bg-color: coral;
+}
 
+#div1 {
+background-color: var(--main-bg-color);
+}
+
+#div2 {
+background-color: var(--main-bg-color);
+}</code></pre><h2 id="定义与用法"><a href="#定义与用法" class="headerlink" title="定义与用法"></a>定义与用法</h2><p>var() 函数用于插入自定义的属性值，如果一个属性值在多处被使用，该方法就很有用。支持版本：CSS3</p>
+<h2 id="CSS-语法"><a href="#CSS-语法" class="headerlink" title="CSS 语法"></a>CSS 语法</h2><pre><code>var(custom-property-name, value)</code></pre><table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>custom-property-name</td>
+<td>必需。自定义属性的名称，必需以 – 开头。</td>
+</tr>
+<tr>
+<td>value</td>
+<td>可选。备用值，在属性不存在的时候使用。</td>
+</tr>
+</tbody></table>
+<p><font color=red>可以理解为带语法的全局变量</font></p>
+<h2 id="更多实例"><a href="#更多实例" class="headerlink" title="更多实例"></a>更多实例</h2><pre><code>:root {
+--main-bg-color: coral;
+--main-txt-color: blue;
+--main-padding: 15px;
+}
+
+#div1 {
+background-color: var(--main-bg-color);
+color: var(--main-txt-color);
+padding: var(--main-padding);
+}
+
+#div2 {
+background-color: var(--main-bg-color);
+color: var(--main-txt-color);
+padding: var(--main-padding);
+}</code></pre>
             </div>
             <hr/>
 
@@ -503,7 +538,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful</code></pre><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://zxc.show/2020/02/28/ck75oonfx00034ovz3kfzgn19/">http://zxc.show/2020/02/28/ck75oonfx00034ovz3kfzgn19/</a>
+                    <a href="http://zxc.show/2020/03/02/ck79rn1d70000i0vzful51u4c/">http://zxc.show/2020/03/02/ck79rn1d70000i0vzful51u4c/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -541,8 +576,8 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful</code></pre><
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/nginx/">
-                                    <span class="chip bg-color">nginx</span>
+                                <a href="/tags/css/">
+                                    <span class="chip bg-color">css</span>
                                 </a>
                             
                         </div>
@@ -708,9 +743,10 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful</code></pre><
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2020/03/02/ck79rn1d70000i0vzful51u4c/">
                     <div class="card-image">
@@ -736,9 +772,9 @@ background
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -747,6 +783,7 @@ background
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -765,35 +802,32 @@ background
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/27/ck75oonfu00014ovz1zzghs3j/">
+                <a href="/2020/02/28/ck75oonfx00034ovz3kfzgn19/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="解决vs code 因为在此系统上禁止运行脚本 报错">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="关于nginx以及配置文件所在位置">
                         
-                        <span class="card-title">解决vs code 因为在此系统上禁止运行脚本 报错</span>
+                        <span class="card-title">关于nginx以及配置文件所在位置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            解决vs code 因为在此系统上禁止运行脚本 报错今天想在VScode中直接运行 hexo s 结果发现VScode显示 此系统上禁止运行脚本  解决方法如下
-
-
-查看ExecutionPolicy状态
-输入 get-ExecutionP
+                            关于nginx以及配置文件所在位置程序在运行中  查询nginx文件位置[root@iz2ze783u2o2utti58eckwz ~]# ps -ef | grep nginx
+root      5349     1  0 Feb27 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/vscode/" class="post-category">
-                                    vscode
+                            <a href="/categories/nginx/" class="post-category">
+                                    nginx
                                 </a>
                             
                             
@@ -803,8 +837,8 @@ background
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
                     </a>
                     
                 </div>

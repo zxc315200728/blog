@@ -1,0 +1,39 @@
+
+
+本地方法栈
+栈
+	局部变量
+	运行栈
+	动态链接
+	
+JAVAP -C
+
+String底层是char[]
+死锁
+
+jps 查看当前正在运行的java程序
+
+jinfo 查看项目中的jvm参数
+jinfo -flags pid(由jps获得)
+
+jstat 查看堆内存情况  和  GC发生的次数
+
+jstack 查看线程死锁   分析死锁情况
+	prio 当前线程的优先级
+	os_prio 系统线程的优先级
+	tid 线程的内存地址
+	nid cup中的线程id
+	
+jmap 导出hprof文件(jvm内存快照)
+	在jvm参数中添加  
+	
+GC日志
+	YGC(YUNG GC轻回收)  快
+	FGC(FULL GC)  慢
+
+
+
+元空间GC水平线  默认21M  水平线会根据每次FullGc的元空间大小进行动态调节
+Metadata-space  
+
+	

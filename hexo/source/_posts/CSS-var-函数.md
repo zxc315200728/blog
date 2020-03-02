@@ -2,7 +2,7 @@
 title: CSS var() 函数
 date: 2020-03-02 09:02:04
 tags: css
-catrgories: css
+categories: css
 ---
 
 # CSS var() 函数 [官方说明](https://www.runoob.com/cssref/func-var.html)

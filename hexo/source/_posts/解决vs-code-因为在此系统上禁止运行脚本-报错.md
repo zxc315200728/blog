@@ -5,11 +5,14 @@ tags: 前端
 categories: vscode
 ---
 
+
 # 解决vs code 因为在此系统上禁止运行脚本 报错
+
 
 今天想在VScode中直接运行 hexo s 结果发现VScode显示 此系统上禁止运行脚本  解决方法如下
 <!--more-->
 
+## 以管理员身份打开VS Code 打开终端
 ## 查看ExecutionPolicy状态
 
 > 输入 get-ExecutionPolicy 显示Restricted 说明在终端中禁止运行脚本

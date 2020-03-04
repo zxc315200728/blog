@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>JVM的基本结构</title>
+      <link href="/2020/03/01/JVM%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/"/>
+      <url>/2020/03/01/JVM%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JAV基本架构学习笔记"><a href="#JAV基本架构学习笔记" class="headerlink" title="JAV基本架构学习笔记"></a>JAV基本架构学习笔记</h1><blockquote><p>JVM由三个主要的子系统组成</p></blockquote><ol><li>类加载子系统</li><li>运行时数据区(内存结构)</li><li>执行引擎</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 架构师 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 架构师 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于nginx以及配置文件所在位置</title>
       <link href="/2020/02/28/%E5%85%B3%E4%BA%8Enginx%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE/"/>
       <url>/2020/02/28/%E5%85%B3%E4%BA%8Enginx%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE/</url>
@@ -58,7 +83,7 @@
       <link href="/2020/02/27/%E8%A7%A3%E5%86%B3vs-code-%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC-%E6%8A%A5%E9%94%99/"/>
       <url>/2020/02/27/%E8%A7%A3%E5%86%B3vs-code-%E5%9B%A0%E4%B8%BA%E5%9C%A8%E6%AD%A4%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%A6%81%E6%AD%A2%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC-%E6%8A%A5%E9%94%99/</url>
       
-        <content type="html"><![CDATA[<h1 id="解决vs-code-因为在此系统上禁止运行脚本-报错"><a href="#解决vs-code-因为在此系统上禁止运行脚本-报错" class="headerlink" title="解决vs code 因为在此系统上禁止运行脚本 报错"></a>解决vs code 因为在此系统上禁止运行脚本 报错</h1><p>今天想在VScode中直接运行 hexo s 结果发现VScode显示 此系统上禁止运行脚本  解决方法如下</p><a id="more"></a><h2 id="查看ExecutionPolicy状态"><a href="#查看ExecutionPolicy状态" class="headerlink" title="查看ExecutionPolicy状态"></a>查看ExecutionPolicy状态</h2><blockquote><p>输入 get-ExecutionPolicy 显示Restricted 说明在终端中禁止运行脚本</p></blockquote><h2 id="修改ExecutionPolicy"><a href="#修改ExecutionPolicy" class="headerlink" title="修改ExecutionPolicy"></a>修改ExecutionPolicy</h2><blockquote><p>set-ExecutionPolicy</p></blockquote><h2 id="设置值"><a href="#设置值" class="headerlink" title="设置值"></a>设置值</h2><blockquote><p>RemoteSigned</p></blockquote><h2 id="验证状态"><a href="#验证状态" class="headerlink" title="验证状态"></a>验证状态</h2><blockquote><p>get-ExecutionPolicy</p></blockquote><hr><h2 id="下面是执行结果"><a href="#下面是执行结果" class="headerlink" title="下面是执行结果"></a>下面是执行结果</h2><pre><code>PS D:\blog\hexo&gt; get-ExecutionPolicyRestrictedPS D:\blog\hexo&gt; set-ExecutionPolicy位于命令管道位置 1 的 cmdlet Set-ExecutionPolicy请为以下参数提供值:ExecutionPolicy: RemoteSignedPS D:\blog\hexo&gt; get-ExecutionPolicyRemoteSignedPS D:\blog\hexo&gt; hexo s  INFO  Start processingINFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="解决vs-code-因为在此系统上禁止运行脚本-报错"><a href="#解决vs-code-因为在此系统上禁止运行脚本-报错" class="headerlink" title="解决vs code 因为在此系统上禁止运行脚本 报错"></a>解决vs code 因为在此系统上禁止运行脚本 报错</h1><p>今天想在VScode中直接运行 hexo s 结果发现VScode显示 此系统上禁止运行脚本  解决方法如下</p><a id="more"></a><h2 id="以管理员身份打开VS-Code-打开终端"><a href="#以管理员身份打开VS-Code-打开终端" class="headerlink" title="以管理员身份打开VS Code 打开终端"></a>以管理员身份打开VS Code 打开终端</h2><h2 id="查看ExecutionPolicy状态"><a href="#查看ExecutionPolicy状态" class="headerlink" title="查看ExecutionPolicy状态"></a>查看ExecutionPolicy状态</h2><blockquote><p>输入 get-ExecutionPolicy 显示Restricted 说明在终端中禁止运行脚本</p></blockquote><h2 id="修改ExecutionPolicy"><a href="#修改ExecutionPolicy" class="headerlink" title="修改ExecutionPolicy"></a>修改ExecutionPolicy</h2><blockquote><p>set-ExecutionPolicy</p></blockquote><h2 id="设置值"><a href="#设置值" class="headerlink" title="设置值"></a>设置值</h2><blockquote><p>RemoteSigned</p></blockquote><h2 id="验证状态"><a href="#验证状态" class="headerlink" title="验证状态"></a>验证状态</h2><blockquote><p>get-ExecutionPolicy</p></blockquote><hr><h2 id="下面是执行结果"><a href="#下面是执行结果" class="headerlink" title="下面是执行结果"></a>下面是执行结果</h2><pre><code>PS D:\blog\hexo&gt; get-ExecutionPolicyRestrictedPS D:\blog\hexo&gt; set-ExecutionPolicy位于命令管道位置 1 的 cmdlet Set-ExecutionPolicy请为以下参数提供值:ExecutionPolicy: RemoteSignedPS D:\blog\hexo&gt; get-ExecutionPolicyRemoteSignedPS D:\blog\hexo&gt; hexo s  INFO  Start processingINFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></pre>]]></content>
       
       
       <categories>

@@ -1,11 +1,19 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="my_first-blog12, 张小灿的博客">
-    <meta name="description" content="my_first-blog12 | 张小灿的博客">
+    <meta name="keywords" content="JVM的基本结构, 张小灿的博客">
+    <meta name="description" content="JVM基本架构学习笔记
+JVM由三个主要的子系统组成
+
+
+类加载子系统
+运行时数据区(内存结构)
+执行引擎
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>my_first-blog12 | 张小灿的博客</title>
+    <title>JVM的基本结构 | 张小灿的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -125,7 +133,7 @@
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -303,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">my_first-blog12</h1>
+                    <h1 class="description center-align post-title">JVM的基本结构</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/">
+                                <span class="chip bg-color">架构师</span>
                             </a>
                         
                     </div>
@@ -434,14 +442,23 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%9E%B6%E6%9E%84%E5%B8%88/" class="post-category">
+                                架构师
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="post-info">
                 
                 <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-02-26
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-01
                 </div>
                 
 
@@ -458,7 +475,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="JVM基本架构学习笔记"><a href="#JVM基本架构学习笔记" class="headerlink" title="JVM基本架构学习笔记"></a>JVM基本架构学习笔记</h1><blockquote>
+<p>JVM由三个主要的子系统组成</p>
+</blockquote>
+<ol>
+<li>类加载子系统</li>
+<li>运行时数据区(内存结构)</li>
+<li>执行引擎</li>
+</ol>
+
             </div>
             <hr/>
 
@@ -469,7 +494,7 @@
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-user">
-                        Author:
+                        文章作者:
                     </i>
                 </span>
                 <span class="reprint-info">
@@ -479,23 +504,23 @@
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
-                        Link:
+                        文章链接:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://zxc.show/2020/02/26/ck74q2okd0003ygwagl807po0/">http://zxc.show/2020/02/26/ck74q2okd0003ygwagl807po0/</a>
+                    <a href="http://zxc.show/2020/03/01/JVM%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/">http://zxc.show/2020/03/01/JVM%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84/</a>
                 </span>
             </div>
             <div class="reprint__notice">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-copyright">
-                        Reprint policy:
+                        版权声明:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    All articles in this blog are used except for special statements
+                    本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    reprint polocy. If reproduced, please indicate source
+                    许可协议。转载请注明来源
                     <a href="http://zxc.show" target="_blank">zxc</a>
                     !
                 </span>
@@ -505,7 +530,7 @@
 
     <script async defer>
       document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
         M.toast({html: toastHTML})
       });
 
@@ -521,8 +546,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/">
+                                    <span class="chip bg-color">架构师</span>
                                 </a>
                             
                         </div>
@@ -690,31 +715,43 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/02/26/ck74q2oko000bygwaf4ln8wmr/">
+                <a href="/2020/03/02/CSS-var-%E5%87%BD%E6%95%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="my_first-blog123">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="CSS var() 函数">
                         
-                        <span class="card-title">my_first-blog123</span>
+                        <span class="card-title">CSS var() 函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            CSS var() 函数 官方说明
+定义一个名为 “–main-bg-color” 的属性，然后使用 var() 函数调用该属性：
+
+:root {
+--main-bg-color: coral;
+}
+
+#div1 {
+background
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            zxc
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/css/" class="post-category">
+                                    css
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -722,8 +759,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
                 </div>
@@ -734,34 +771,35 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/26/ck74q2okk0006ygwahfesdh17/">
+                <a href="/2020/02/28/%E5%85%B3%E4%BA%8Enginx%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="my_first-blog1">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="关于nginx以及配置文件所在位置">
                         
-                        <span class="card-title">my_first-blog1</span>
+                        <span class="card-title">关于nginx以及配置文件所在位置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            关于nginx以及配置文件所在位置程序在运行中  查询nginx文件位置[root@iz2ze783u2o2utti58eckwz ~]# ps -ef | grep nginx
+root      5349     1  0 Feb27 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
+                            <a href="/categories/nginx/" class="post-category">
+                                    nginx
                                 </a>
                             
                             
@@ -771,8 +809,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
                     </a>
                     
                 </div>
@@ -813,9 +851,9 @@
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + 'From: 张小灿的博客<br />'
-            + 'Author: zxc<br />'
-            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '来源: 张小灿的博客<br />'
+            + '文章作者: zxc<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
@@ -852,7 +890,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -980,7 +1018,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=315200728" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 315200728" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -989,10 +1027,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
@@ -1005,8 +1039,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
